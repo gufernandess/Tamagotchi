@@ -4,8 +4,7 @@ public class Pet {
     private int energy, hungry, shower;
     private int diamonds;
     private int age;
-    private boolean isAlive;
-
+    
     public Pet(int energy, int hungry, int shower) {
         this.energyMax = energy;
         this.hungryMax = hungry;
@@ -13,8 +12,6 @@ public class Pet {
 
         this.age = 0;
         this.diamonds = 0;
-        this.isAlive = true;
-
         setEnergy(energy);
         setHungry(hungry);
         setClean(shower);
@@ -56,7 +53,6 @@ public class Pet {
         if(energyValue <= 0){
             this.energy = 0;
             System.out.println("fail: pet morreu de fraqueza");
-            this.isAlive = false;
         }
         else if(energyValue > this.energyMax)
             this.energy = this.energyMax;
@@ -68,7 +64,6 @@ public class Pet {
         if(hungryValue <= 0){
             this.hungry = 0;
             System.out.println("fail: pet morreu de fome");
-            this.isAlive = false;
         }
         else if(hungryValue > this.hungryMax)
             this.hungry = this.hungryMax;
@@ -80,7 +75,6 @@ public class Pet {
         if(cleanValue <= 0){
             this.shower = 0;
             System.out.println("fail: pet morreu de sujeira");
-            this.isAlive = false;
         }
         else if(cleanValue > this.cleanMax)
             this.shower = this.cleanMax;

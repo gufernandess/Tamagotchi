@@ -1,3 +1,4 @@
+package Pet;
 // Classe que verifica o estado do Pet
 // Princípio aplicado: Open/Closed (OCP)
 // Justificativa: A lógica de verificação do estado é encapsulada, permitindo extensão

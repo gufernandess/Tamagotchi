@@ -1,3 +1,4 @@
+package Pet;
 // Classe que gerencia as ações do Pet
 // Princípios aplicados:
 // - Single Responsibility (SRP): Gerencia exclusivamente as ações do Pet.
@@ -41,7 +42,7 @@ public class PetActions {
             return;
         }
         if (stats.getEnergy() <= (stats.getEnergyMax() - 5)) {
-            stats.incrementAge(stats.getEnergyMax() - stats.getEnergy());
+            stats.incrementAge();
             stats.updateEnergy(stats.getEnergyMax());
             stats.updateHungry(stats.getHungry() - 1);
         } else {
@@ -57,6 +58,6 @@ public class PetActions {
         stats.updateEnergy(stats.getEnergy() - 3);
         stats.updateHungry(stats.getHungry() - 1);
         stats.updateClean(stats.getCleanMax());
-        stats.incrementAge(2);
+        stats.incrementAge();
     }
 }

@@ -1,3 +1,4 @@
+package Pet;
 // Classe para gerenciar os atributos do Pet
 // Princípio aplicado: Single Responsibility (SRP)
 // Justificativa: A responsabilidade única desta classe é gerenciar os atributos do Pet.

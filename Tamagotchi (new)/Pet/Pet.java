@@ -1,3 +1,4 @@
+package Pet;
 // Classe principal que usa composição para gerenciar o Pet
 // Princípios aplicados:
 // - Dependency Inversion (DIP): Depende de abstrações (PetStats e PetStatus), e não de implementações concretas.

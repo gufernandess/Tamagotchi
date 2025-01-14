@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import Pet.Pet;
+
 public class Solver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
